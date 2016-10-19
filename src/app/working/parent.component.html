@@ -1,0 +1,12 @@
+<h2>{{master}} controls {{heroes.length}} heroes</h2>
+<app-child 
+      (parentcall)="triggerAllChilComponents($event)" 
+      *ngFor="let hero of heroes" 
+      [master]="master" 
+      [hero]="hero" 
+      [parentToChild]="parentToChild"
+      #childCom>
+</app-child>
+
+
+
